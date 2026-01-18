@@ -4,6 +4,11 @@ import path from "path";
 // 🚧 Use ['ENV_NAME'] avoid vite:define plugin - Vite@2.x
 const VITE_DEV_SERVER_URL = process.env["VITE_DEV_SERVER_URL"];
 
+import Store from "electron-store";
+
+// Initialize electron-store listeners
+Store.initRenderer();
+
 // Fix for Linux White Screen (Ubuntu)
 app.disableHardwareAcceleration();
 
@@ -26,7 +31,7 @@ function createWindow() {
   }
 
   // Debug: Open DevTools to check for errors
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
 }
 
 app.whenReady().then(createWindow);

@@ -1,47 +1,49 @@
 # 🎮 Vibe Survival Game
 
-> **"느낌(Vibe)대로 빠르게 만드는"** 멀티플레이 2D 서바이벌 게임 프로젝트입니다.
+> **"데스크탑에서 즐기는 2D 픽셀 서바이벌 성장 게임"**
 
-## 📖 프로젝트 개요
+## 📖 게임 소개 (Introduction)
 
-사용자가 데스크탑에서 다른 작업과 병행하며 즐길 수 있는 **설치형 성장 게임**입니다.
-AI(Vibe Coding)를 적극 활용하여 빠르고 효율적으로 개발하는 것을 목표로 합니다.
+**Vibe Survival Game**은 끝없이 몰려오는 적들을 막아내며 캐릭터를 성장시키는 **로그라이크 서바이벌 게임**입니다.
+복잡한 조작 없이 이동만 하면 캐릭터가 알아서 싸워주는 편리한 시스템을 갖추고 있습니다.
 
-## 🛠️ 기술 스택 (The Vibe Stack)
+---
 
+## �️ 게임 설명서 (Game Manual)
+
+### 1. 캐릭터 구분
+
+- 🟩 **나 (Player)**: 초록색 사각형. 여러분이 조종하는 캐릭터입니다.
+- 🟥 **적 (Enemy)**: 빨간색 사각형. 여러분을 쫓아와 몸통 박치기를 합니다.
+- 🟨 **총알 (Bullet)**: 노란색 사각형. 플레이어가 적을 향해 자동으로 발사합니다.
+
+### 2. 조작 방법 (Controls)
+
+- **이동**: 키보드 `방향키` 또는 `W`, `A`, `S`, `D`
+- **공격**: **자동 공격** (사거리 내 가장 가까운 적을 스스로 공격)
+
+### 3. 게임 규칙 (Rules)
+
+1.  **생존**: 적의 몸통 박치기를 피해 계속 도망치세요.
+2.  **전투**: 적에게 총알을 맞춰 체력을 깎으세요. (현재 2방 맞으면 죽음)
+3.  **성장 (예정)**: 적을 처치하고 떨어진 경험치를 먹으면 레벨업합니다.
+
+---
+
+## 🛠️ 기술 스택 (Tech Stack)
+
+- **Engine**: Phaser 3
+- **App**: Electron
 - **Language**: TypeScript
-- **Game Engine**: Phaser 3 (Canvas Mode for Linux Compatibility)
-- **Desktop Shell**: Electron
-- **UI Library**: React
-- **Bundler**: Vite
 
-## 🚀 실행 방법 (How to Run)
+## 🚀 설치 및 실행 (Installation)
 
-이 프로젝트는 `npm`을 사용하여 실행합니다. 반드시 프로젝트 루트(`p1/`)에서 실행해 주세요.
+프로젝트 폴더(`p1`)에서 아래 명령어를 순서대로 실행하세요.
 
 ```bash
-# 1. 의존성 설치
+# 1. 라이브러리 설치
 npm install
 
-# 2. 개발 모드 실행
+# 2. 게임 시작
 npm run dev
 ```
-
-## 📂 디렉토리 구조
-
-```text
-p1/
-├── index.html        # Vite 진입점 (대문)
-├── src/
-│   ├── main/         # Electron 메인 프로세스 (창 관리)
-│   └── renderer/     # Phaser 게임 로직 & React UI
-└── dev-guide/        # 기술 스택 상세 가이드 문서
-```
-
-## 📝 개발 규칙
-
-- 모든 커밋과 문서는 **한글**로 작성합니다.
-- 자세한 규칙은 `PROJECT_RULES.md`를 참고하세요.
-# Vibe-Survival-Game
-# Vibe-Survival-Game
-# Vibe-Survival-Game

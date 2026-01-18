@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import Phaser from "phaser";
 import GameScene from "./game/GameScene";
 
+import StartScene from "./game/StartScene";
+
 const App: React.FC = () => {
   const gameRef = useRef<Phaser.Game | null>(null);
 
@@ -20,7 +22,7 @@ const App: React.FC = () => {
           debug: true,
         },
       },
-      scene: [GameScene],
+      scene: [StartScene, GameScene], // Add StartScene first!
     };
 
     gameRef.current = new Phaser.Game(config);
